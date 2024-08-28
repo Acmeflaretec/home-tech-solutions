@@ -1254,6 +1254,27 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
     height: 650px;
   }
 }
+/* WhatsApp Floating Button Style */
+.whatsapp-float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-float img {
+  margin-top: 10px;
+  width: 32px;
+  height: 32px;
+}
 
 .slider-content {
   position: relative;
