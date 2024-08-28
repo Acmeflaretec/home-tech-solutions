@@ -263,3 +263,21 @@ jQuery(function ($) {
 
 
 });
+let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
+
+function updateCarousel() {
+    const offset = -currentIndex * 100;
+    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % items.length;
+    updateCarousel();
+}
+
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    updateCarousel();
+}
+
