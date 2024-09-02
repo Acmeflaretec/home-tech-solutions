@@ -1176,6 +1176,42 @@ a:focus {
     height: 56.25vw;
   }
 }
+.fb-btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #4267B2, #3b5998);
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.3s;
+  text-align: center;
+  margin-left: 100px;
+}
+@media (max-width: 575px) {
+  .fb-btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #4267B2, #3b5998);
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+    text-align: center;
+    
+  }
+}
+.fb-btn i {
+  margin-right: 5px;
+}
+
+.fb-btn:hover {
+  background: linear-gradient(45deg, #3b5998, #4267B2);
+  transform: scale(1.1);
+  text-decoration: none; 
+  color: white;
+}
 
 .slider-content {
   position: relative;
